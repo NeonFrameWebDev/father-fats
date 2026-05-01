@@ -710,6 +710,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: rgba(0,0,0,0.55);
   margin: 0.25rem 0 0;
 }
+.brunch-ig-link {
+  color: var(--magenta);
+  text-decoration: none;
+}
+.brunch-ig-link:hover {
+  text-decoration: underline;
+}
 
 /* ============================================================
    REVIEWS
