@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Father Fats Public House | Stevens Point, WI</title>
+  <meta name="description" content="Small plates, craft cocktails, and a rotating menu built around Wisconsin farms. First-come, first-served. 945 Clark St, Stevens Point WI.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Father Fats Public House | Stevens Point, WI">
+  <meta property="og:description" content="New York. Asia. The Deep South. Spain. Stevens Point. Small plates and craft cocktails on Clark Street since 2014.">
+  <meta property="og:image" content="https://neonframewebdev.github.io/father-fats/assets/interior_1.jpg">
+  <meta property="og:url" content="https://neonframewebdev.github.io/father-fats/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/logo_alt.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" aria-hidden="true">
+    <img src="assets/logo_alt.webp" alt="Father Fats Public House" class="loader-logo">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo_alt.webp" alt="Father Fats Public House" width="120" height="87">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="#menu" data-section="menu">Menu</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#drinks" data-section="drinks">Drinks</a></li>
+        <li><a href="#find-us" data-section="find-us">Find Us</a></li>
+      </ul>
+      <a href="#drinks" class="nav-cta">Happy Hour: Tue-Thu 4-6pm</a>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">&#x2715;</button>
+    <ul role="list">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#drinks">Drinks</a></li>
+      <li><a href="#find-us">Find Us</a></li>
+    </ul>
+    <a href="#drinks" class="overlay-cta">Happy Hour: Tue-Thu 4-6pm</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <div class="hero-bg" id="heroBg" style="background-image: url('assets/interior_1.jpg');" role="img" aria-label="Father Fats dining room with graffiti mural accent wall"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow eyebrow--chartreuse">945 Clark St, Stevens Point WI</p>
+      <h1>New York. Asia.<br>The Deep South. Spain.<br>Stevens Point.</h1>
+      <p class="hero-sub">Small plates, craft cocktails, and a rotating menu built around Wisconsin farms. First-come, first-served.</p>
+      <a href="#menu" class="btn btn--magenta">See the Menu</a>
+    </div>
+  </section>
+
+  <!-- ===== PROOF BAR ===== -->
+  <section class="proof-bar" aria-label="Credentials">
+    <div class="proof-bar-inner">
+      <div class="proof-stat">
+        <span class="proof-number" data-count-to="4.6" data-decimals="1" id="statStars">0.0</span>
+        <span class="proof-label">Google Reviews</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat">
+        <span class="proof-number" data-count-to="663" data-decimals="0" id="statReviews">0</span>
+        <span class="proof-label">Google Reviews</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat">
+        <span class="proof-number proof-text">Open Since 2014</span>
+        <span class="proof-label">Stevens Point, WI</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat">
+        <span class="proof-number proof-text">PBS Wisconsin</span>
+        <span class="proof-label">Main Streets Feature, 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section-warm" aria-label="Our story">
+    <div class="about-inner constrain">
+      <div class="about-copy fade-in">
+        <p class="eyebrow eyebrow--chartreuse">The Kitchen</p>
+        <h2>A knife-wielding chef and every cuisine he respects.</h2>
+        <p>Father Fats has been on Clark Street since 2014. The concept is simple: a knife-wielding masterful Chef putting together the ultimate hit list of ingredients, sourced from local Wisconsin farms and filtered through just about every cuisine he respects.</p>
+        <p>The result tastes like New York, Asia, The Deep South, and Spain all sharing a table in Stevens Point. No reservations. No fixed menu. Mix and match, taste and graze. Featured on PBS Wisconsin's Main Streets in March 2026 alongside Chef's Kitchen next door.</p>
+      </div>
+      <div class="about-photo fade-in">
+        <img src="assets/atmosphere_2.jpg" alt="Shared plates on the table at Father Fats, graffiti mural in background" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="menu-section section-dark" aria-label="Small plates menu">
+    <div class="constrain fade-in">
+      <p class="eyebrow eyebrow--magenta">The Plates</p>
+      <h2>Grab a few plates and share. That's how it works here.</h2>
+      <div class="menu-grid">
+        <ul class="menu-list" role="list">
+          <li class="menu-item">
+            <span class="menu-name">Soup of the Day</span>
+            <span class="menu-price">$5</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Pork Belly Taco</span>
+            <span class="menu-price">$5 ea</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Mini Truffle Grilled Cheese Sandwich</span>
+            <span class="menu-price">$3.50 ea</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Tonight's Bruschetta</span>
+            <span class="menu-price">$13</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Father Fats Quinoa <span class="gf">(GF)</span></span>
+            <span class="menu-price">$9</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Herb Butter Roasted Vegetables <span class="gf">(GF)</span></span>
+            <span class="menu-price">$9</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Piri Piri Chevre</span>
+            <span class="menu-price">$8</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Marinated Summer Squash Salad <span class="gf">(GF)</span></span>
+            <span class="menu-price">$10</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Prosciutto Salad</span>
+            <span class="menu-price">$11</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Italian Meatballs</span>
+            <span class="menu-price">$14</span>
+          </li>
+        </ul>
+        <ul class="menu-list" role="list">
+          <li class="menu-item">
+            <span class="menu-name">Baked Beef Taco Stuffed Mushrooms <span class="gf">(GF)</span></span>
+            <span class="menu-price">$14</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Fried Gator Bites</span>
+            <span class="menu-price">$15</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Buffalo Chicken Wings</span>
+            <span class="menu-price">$16</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Smoked Brisket Mac &amp; Cheese</span>
+            <span class="menu-price">$16</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Shredded Pork Nachos</span>
+            <span class="menu-price">$19</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Jambalaya</span>
+            <span class="menu-price">$19</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Pork Stroganoff</span>
+            <span class="menu-price">$19</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Buttermilk Fried Chicken &amp; Waffles</span>
+            <span class="menu-price">$19</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Firecracker Shrimp</span>
+            <span class="menu-price">$19</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Pan Seared Halibut Cheeks</span>
+            <span class="menu-price">$23</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Pan Roasted Halibut <span class="gf">(GF)</span></span>
+            <span class="menu-price">$24</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-name">Pan Seared Sea Scallops <span class="gf">(GF)</span></span>
+            <span class="menu-price">$26</span>
+          </li>
+        </ul>
+      </div>
+      <p class="menu-note">Menu rotates with the season. What you see tonight may not exist tomorrow.</p>
+    </div>
+  </section>
+
+  <!-- ===== DRINKS ===== -->
+  <section id="drinks" class="drinks-section section-warm" aria-label="Cocktails and drinks">
+    <div class="drinks-inner constrain">
+      <div class="drinks-content fade-in">
+        <p class="eyebrow eyebrow--magenta">The Bar</p>
+        <h2>Isaak built these. They're $11. The names are accurate.</h2>
+
+        <ul class="drinks-list" role="list">
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">My Freak Is Unmatchable</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">Screwball Peanut Butter Whiskey, Muddled Orange and Jelly, Angostura Bitters, Homemade Sour, Splash Soda</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">Struggle Bus</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">360 Watermelon Vodka, Muddled Watermelon and Cilantro, Madison Avenue Orangecello, Homemade Sour</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">They're Taking the Hobbits to Isengard</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">Midwest Gin, Pama Pomegranate Liqueur, Homemade Sour, Liquid Death Slaughter Berry, Splash Soda</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">Weekday Banger</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">Sol Oasis Vodka, Lazzaroni Amaretto, Splash Pineapple Juice, Splash Homemade Sour, Franklin &amp; Sons Almond-Pineapple Soda</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">Bad Emma's First Sangria of 2026</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">Rayu Mezcal, Tequila, Muddled Cucumber, Eldee Grapefruit Liqueur, Homemade Sour, Splash Soda, Citrus, Salt Rim</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">Home Malone</span>
+              <span class="menu-price">$11</span>
+            </div>
+            <p class="drinks-ingredients">Western Son Blueberry Vodka, D'Arsti Kalani Dwarf Coconut Liqueur, Raspberry Lemonade, Splash Soda</p>
+          </li>
+        </ul>
+
+        <p class="drinks-subsection-label eyebrow eyebrow--chartreuse">Not Drinking?</p>
+        <ul class="drinks-list" role="list">
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">I Don't Want To Be In The Loop...</span>
+              <span class="menu-price">$9</span>
+            </div>
+            <p class="drinks-ingredients">Muddled Mint, Lime, &amp; Strawberries, 1883 Blood Orange Syrup, Seedlip Notas de Agave NA Liquor, Homemade Sour, Soda</p>
+          </li>
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">Root Beer &amp; Cream Soda</span>
+              <span class="menu-price">$3</span>
+            </div>
+          </li>
+        </ul>
+
+        <p class="drinks-subsection-label eyebrow eyebrow--chartreuse">THC</p>
+        <ul class="drinks-list" role="list">
+          <li class="drinks-item">
+            <div class="drinks-name-row">
+              <span class="drinks-name">The Long Unwinding Road</span>
+              <span class="menu-price">$9</span>
+            </div>
+            <p class="drinks-ingredients">Tattersal THC Unwind Calming Tonic, Reading Soda Co. Blueberry Lavender Soda, Homemade Sour</p>
+          </li>
+        </ul>
+
+        <div class="happy-hour-band">
+          Happy Hour: Tue-Thu 4-6pm &nbsp;&#8226;&nbsp; $1 off everything
+        </div>
+      </div>
+      <!-- One cocktail photo needed; IG reel of mixologist Isaak (June 2024) is the target. Using dish_3.jpg beer glass as stand-in. -->
+      <div class="drinks-photo" aria-hidden="true">
+        <img src="assets/dish_3.jpg" alt="Section 7:15 craft beer at Father Fats" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="gallery-section section-dark" aria-label="Food gallery">
+    <div class="constrain">
+      <p class="eyebrow eyebrow--chartreuse fade-in">The Food</p>
+      <div class="masonry-grid" id="galleryGrid">
+        <div class="masonry-item fade-in">
+          <img src="assets/atmosphere_1.jpg" alt="Diners sharing plates at Father Fats" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/atmosphere_2.jpg" alt="Overhead spread of shared plates beside the graffiti mural" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_8.jpg" alt="Grilled shrimp bowl and salad" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_9.jpg" alt="Plated dish beside Father Fats menu card" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_4.jpg" alt="Seared salmon, calamari, and brunch plate" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_6.jpg" alt="Prosciutto salad, green bean amandine, and French toast brunch" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_5.jpg" alt="Arancini fritters and craft beer" loading="lazy">
+        </div>
+        <div class="masonry-item fade-in">
+          <img src="assets/dish_7.jpg" alt="Crab cakes in front of the graffiti mural" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">&#x2715;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- ===== BRUNCH STRIP ===== -->
+  <section id="brunch" class="brunch-strip" aria-label="Brunch dates">
+    <p class="eyebrow eyebrow--black">Select Sundays</p>
+    <p class="brunch-headline">Brunch, 10am to 1pm.</p>
+    <p class="brunch-dates">2026 dates: May 17 and 31</p>
+    <p class="brunch-sub">French toast with strawberries, mascarpone, and sliced almonds. Eggs benedict variants. Lighter plates. Same Fats energy, earlier in the day. No reservation needed. Show up.</p>
+    <p class="brunch-note">[copy needed: brunch dates June+]</p>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" class="reviews-section section-dark" aria-label="Google reviews">
+    <div class="constrain fade-in">
+      <p class="eyebrow eyebrow--chartreuse">663 Reviews. 4.6 Stars.</p>
+      <!-- [copy needed: 3 real 5-star Google review pull-quotes -- Spark to source from 663 reviews at maps.google.com/Father+Fats+Public+House] -->
+      <div class="reviews-grid">
+        <blockquote class="review-card review-card--placeholder">
+          <p class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review-text review-placeholder-text">[copy needed: real Google review #1]</p>
+          <cite class="review-name">Google Reviewer</cite>
+        </blockquote>
+        <blockquote class="review-card review-card--placeholder">
+          <p class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review-text review-placeholder-text">[copy needed: real Google review #2]</p>
+          <cite class="review-name">Google Reviewer</cite>
+        </blockquote>
+        <blockquote class="review-card review-card--placeholder">
+          <p class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review-text review-placeholder-text">[copy needed: real Google review #3]</p>
+          <cite class="review-name">Google Reviewer</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FIND US ===== -->
+  <section id="find-us" class="contact-section section-warm" aria-label="Contact and location">
+    <div class="contact-inner constrain">
+      <div class="contact-info fade-in">
+        <h2>945 Clark Street<br>Stevens Point, WI 54481</h2>
+        <div class="hours-block">
+          <table class="hours-table" aria-label="Hours of operation">
+            <tbody>
+              <tr><td>Tue-Sat</td><td>Open at 4pm</td></tr>
+              <tr><td>Sun</td><td>Select brunch 10am-1pm</td></tr>
+              <tr><td>Mon</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="contact-phone"><a href="tel:+17155444054">(715) 544-4054</a></p>
+        <p class="contact-email"><a href="mailto:fatherfats945@gmail.com">fatherfats945@gmail.com</a></p>
+        <p class="policy-note">No reservations. We seat completed parties. Groups of 6+ call ahead.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/FatherFats" target="_blank" rel="noopener" aria-label="Father Fats on Facebook" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/fatherfats" target="_blank" rel="noopener" aria-label="Father Fats on Instagram" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+
+        <form class="contact-form" aria-label="Contact form" onsubmit="return false;">
+          <h3>Say hello</h3>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" autocomplete="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--magenta">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-map fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3!2d-89.5673!3d44.5236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8803c3a2b2f8e4f5%3A0x1234567890abcdef!2s945%20Clark%20St%2C%20Stevens%20Point%2C%20WI%2054481!5e0!3m2!1sen!2sus!4v1714600000000!5m2!1sen!2sus"
+          width="100%"
+          height="500"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Father Fats Public House location map"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-rule" aria-hidden="true"></div>
+    <div class="footer-inner constrain">
+      <div class="footer-brand">
+        <img src="assets/logo_alt.webp" alt="Father Fats Public House" width="100" height="73">
+        <p>Father Fats Public House, Stevens Point WI</p>
+        <p class="footer-tagline">Tapas Inspired Plates + Craft Cocktails</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#find-us">Find Us</a>
+      </nav>
+      <div class="footer-credit">
+        <a href="https://neonframewebdesign.com" target="_blank" rel="noopener">Site by NeonFrame Web Design</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
